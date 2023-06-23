@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+    <header class="bg-indigo-500 text-white py-4 px-8">
+        <h1 class="text-3xl font-bold">MyBibli</h1>
+    </header>
+    <% if (messages.error) { %>
+        <%= messages.error %>
+      <% } %>
+
+    <div class="container mx-auto mt-8" style="width: 500px; margin-top: 150px;">
+        <h2 class="text-2xl font-semibold mb-4">Login</h2>
+        <form action="/login" method="post" class="flex flex-col" style="margin-top: 50px;">
+            <label for="email" class="text-lg mb-2">Email</label>
+            <input type="email" id="email" name="email" class="py-2 px-4 border rounded mb-4">
+
+            <label for="password" class="text-lg mb-2">Password</label>
+            <input type="password" id="password" name="password" class="py-2 px-4 border rounded mb-4">
+
+            <button type="submit" class="bg-indigo-500 text-white py-2 px-4 rounded">Log In</button>
+        </form>
+        <a href="/register">Register</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+    <header class="bg-indigo-500 text-white py-4 px-8">
+        <h1 class="text-3xl font-bold">MyBibli</h1>
+    </header>
+    <% if (messages.error) { %>
+        <%= messages.error %>
+      <% } %>
+      <h1 class="text-3xl font-bold">Hi <%= name %></h1>
+      <div class="container mx-auto mt-8" style="width: 500px; margin-top: 150px;"></div>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit" class="bg-indigo-500 text-white py-2 px-4 rounded">Log Out</button>
+      </form>
+    </div>
+</body>
+</html>
